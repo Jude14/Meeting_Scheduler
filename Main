@@ -48,12 +48,13 @@ public class Main {
         String[][] ar2 = new String[alB.size()][2];
         for(String[] t:alB)
             ar2[counterB++]=t;
-
+        
+        /*
         System.out.println("ar1: ");
         printTimes(ar1);
         System.out.println("ar2: ");
         printTimes(ar2);
-
+        */
 
         System.out.println();
         printTimes(common(ar1,ar2,duration,boundA,boundB));
@@ -88,6 +89,7 @@ public class Main {
         return hours*60 + minutes;
     }
     public static void printTimes(String[][] ar){
+        System.out.println("Available meeting times:");
         for(int i = 0; i<ar.length; i++) {
             System.out.print(ar[i][0]);
             System.out.print(",");
